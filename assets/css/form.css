@@ -1,0 +1,25 @@
+/*!
+ * Форма (Form).
+ *
+ * Расширение "Медиа диалоги".
+ * Модуль "Справочники".
+ *
+ * Copyright 2015 RosGear
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://rosgear.ru/license/
+ */
+
+/**
+ * Панель вкладок формы.
+ */
+/* Значок "Общее" */
+.rg-references-mediadialogs__icon-common { background-image: url("../images/icon-tab-common.svg"); }
+/* Значок "Вид" */
+.rg-references-mediadialogs__icon-view { background-image: url("../images/icon-tab-view.svg"); }
+/* Значок "Медиапапки" */
+.rg-references-mediadialogs__icon-folders { background-image: url("../images/icon-tab-folders.svg"); }
+/* Папка */
+.rg-references-mediadialogs__folder {
+    display: inline-block;
+    width: 16px;
+    height: 16px; }
