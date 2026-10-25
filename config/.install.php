@@ -12,8 +12,8 @@
 return [
     'id'          => 'rg.be.references.media_dialogs',
     'moduleId'    => 'rg.be.references',
-    'name'        => 'Media dialogs',
-    'description' => 'Media selection dialogs',
+    'name'        => 'Media dialogues',
+    'description' => 'Media file selection dialogs',
     'namespace'   => 'Rg\Backend\References\MediaDialogs',
     'path'        => '/rg/rg.be.references.media_dialogs',
     'route'       => 'media-dialogs',
