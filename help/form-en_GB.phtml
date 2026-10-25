@@ -1,6 +1,6 @@
 <?php
 /**
- * Страница "Форма добавления / редактирования медиа диалога".
+ * Страница "Форма добавления / редактирования медиадиалога".
  * 
  * Английская (британская) локализация.
  * 
@@ -15,25 +15,25 @@
     <div class="g-help-screen g-help-screen--hidable">
         <img src="<?= $assetsUrl, '/help/form.png' ?>" />
     </div>
-    <p>The form appears after clicking the <b>"Add"</b> button on the elements list toolbar or selecting the <b>"Edit"</b> item from the context menu of the selected entry.</p>
+    <p>The form appears after clicking the <b>"Add"</b> button on <a href="<?= $url('grid') ?>">the elements list</a> toolbar or selecting the <b>"Edit"</b> item from the context menu of the selected entry.</p>
     <h2>Form tabs</h2>
     <h3>Form tab "Common"</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua and
-has the following fields:</p>
+    <p>This tab displays general media dialogue settings, which are configured in the following fields:</p>
     <ul class="g-help-list">
-        <li><b>Name.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Alias.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Enabled.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Folder name.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Media folder.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Cut off the path.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Select.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Label.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Name.</b> The name of the media dialog;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Alias.</b> A unique alias for the media dialog; it serves as a parameter value within the Control Panel component interface, enabling quick invocation of the media dialog and the execution of its intended functionality;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Enabled.</b> A flag that determines whether the media dialog is permitted to be used (invoked);</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Folder name.</b> The media dialog folder acts as the primary directory for file selection. Its name appears at the root of the folder tree within the media dialog panel;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Media folder.</b> Select a media folder profile for the folder specified above. The chosen <a href="<?= $url('index', 'extension:rg.be.references.folder_profiles') ?>">profile</a> determines how the media dialog is displayed, as well as the parameters for selecting folders or files within it;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Path prefix to remove.</b> Specifies the part of the path to be stripped from the selected file or folder when it is inserted into the media dialog’s selection field.</li> If no value is specified, the path to the shared directory—for example, <code>/public</code>—is stripped by default;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Select.</b> Specify which types of objects can be selected in the media dialog: a file, a folder, or both (file or folder);</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Label.</b> The label defines a text caption for the file or folder selection field.</li>
     </ul>
 
     <h3>Form tab "Interface"</h3>
-    <p>Dialog element display options.</p>
-
+    <p>This tab contains settings that determine the appearance and interface elements of the dialog box.</p>
+    <br>
     <h3>Form tab "Media folders"</h3>
-    <p>Selected media folders of the dialog box tree provide the ability to view and select files and folders of the corresponding type. The root element of the tree (the "Media Files" folder) must be selected.</p>
+    <p>On this tab, you select the media folders that will appear in the dialog box's tree structure. These selected folders allow you to browse and choose files and folders of the corresponding type.<br>
+    The root element of the tree (the "Media Files" folder) must be selected.</p>
 </article>
