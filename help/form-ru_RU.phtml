@@ -1,6 +1,6 @@
 <?php
 /**
- * Страница "Форма добавления / редактирования медиа диалога".
+ * Страница "Форма добавления / редактирования медиадиалога".
  * 
  * Русская локализации.
  * 
@@ -11,29 +11,29 @@
  */
 ?>
 <article>
-    <h1>Форма добавления / редактирования медиа диалога</h1>
+    <h1>Форма добавления / редактирования медиадиалога</h1>
     <div class="g-help-screen g-help-screen--hidable">
         <img src="<?= $assetsUrl, '/help/form.png' ?>" />
     </div>
-    <p>Форма появляется после нажатия на кнопку <b>"Добавить"</b> панели инструментов списка элементов или выбора пункта <b>"Редактировать"</b> контекстного меню выбранной записи.</p>
+    <p>Форма появляется после нажатия на кнопку <b>"Добавить"</b> панели инструментов <a href="<?= $url('grid') ?>">списка медиадилогов</a> или выбора пункта <b>"Редактировать"</b> контекстного меню выбранной записи.</p>
     <h2>Вкладки формы</h2>
     <h3>Вкладка формы "Общее"</h3>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua и 
-имеет следующие поля:</p>
+    <p>На вкладке представлены общие параметры медиадиалога, задаваемые в полях:</p>
     <ul class="g-help-list">
-        <li><b>Название.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Псевдоним.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Доступен.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Имя папки.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Медиапапка.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Отсечь путь.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Выбрать.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Метка.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Название.</b> Название медиадиалога;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Псевдоним.</b> Уникальный псевдоним медиадиалога служит значением параметра в интерфейсе компонента Панели управления, обеспечивая быстрый вызов медиадиалога и реализацию требуемого функционала;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Доступен.</b> Флаг определяет, разрешено ли использование - вызов медиадиалога;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Имя папки.</b> Папка медиадиалога — основная папка для выбора файла. Её имя видно в корне дерева папок на панели медиадиалога;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Медиапапка.</b> Выберите профиль медиапапки для указанной выше папки. Выбранный <a href="<?= $url('index', 'extension:rg.be.references.folder_profiles') ?>">профиль</a> определяет отображение медиадиалога, а также параметры выбора папки или файла в нём.</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Отсечь путь.</b> Указывается часть пути, которая будет отсекаться у выбранного файла или папки при подстановке в поле выбора медиадиалога. Если значение не задано, по умолчанию отсекается путь к директории общего доступа — например, <code>/public</code>;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Выбрать.</b> Укажите, какие объекты будут доступны для выбора в медиадиалоге: файл, папка либо оба типа (файл или папка);</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Метка.</b> Метка задаёт текстовую подпись для поля выбора файла или папки.</li>
     </ul>
 
     <h3>Вкладка формы "Вид"</h3>
-    <p>Параметры отображения элементов диалогового окна.</p>
-
+    <p>Вкладка содержит параметры, определяющие внешний вид и элементы интерфейса диалогового окна.</p>
+    <br>
     <h3>Вкладка формы "Медиапапки"</h3>
-    <p>Выбранные медиапапки дерева диалогового окна, предоставляют возможность просмотра, выбора файлов и папок соответствующего типа. Корневой элемент дерева (папка "Медиафайлы") должен быть обязательно выбран.</p>
+    <p>На вкладке выбирают медиапапки, которые будут отображаться в дереве диалогового окна. Выбранные папки позволяют просматривать и выбирать файлы и папки соответствующего типа.<br>
+    Корневой элемент дерева (папка "Медиафайлы") должен быть обязательно выбран.</p>
 </article>
