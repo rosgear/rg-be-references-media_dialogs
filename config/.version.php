@@ -10,10 +10,10 @@
  */
 
 return [
-    'name'        => 'Media dialogs',
-    'description' => 'Media selection dialogs',
-    'version'     => '1.0',
-    'versionDate' => '20-12-2017',
+    'name'        => 'Media dialogues',
+    'description' => 'Media file selection dialogs',
+    'version'     => '1.0.1',
+    'versionDate' => '09-10-2026',
     'author'      => 'RosGear',
     'authorUrl'   => 'https://rosgear.ru/',
     'email'       => 'info@rosgear.ru',
